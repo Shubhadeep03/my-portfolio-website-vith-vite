@@ -1,0 +1,72 @@
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+body{
+    background-color: #0c0c1d;
+    color: lightgrey;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+section{
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+
+// .navbar {
+//     height: 6.25rem;
+  
+//     .wrapper {
+//       max-width: 85.375rem;
+//       margin: auto;
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-around;
+//       // background-color: rebeccapurple;
+//       height: 100%;
+  
+
+  
+//       span {
+//         font-weight: bold;
+  
+   
+//       }
+//       .social {
+//         display: flex;
+//         gap: 1.25rem;
+  
+//         img {
+//           height: 1.125rem;
+//           width: 1.125rem;
+//         }
+//       }
+//     }
+//   }
+@mixin mobile{
+    @media (max-width: 768px)
+    {
+        @content;
+    }
+}
+@mixin tab{
+    @media (max-width: 1024px)
+    {
+        @content;
+    }
+}
+@mixin desktop{
+    @media (max-width: 1366px)
+    {
+        @content;
+    }
+}

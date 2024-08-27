@@ -1,0 +1,36 @@
+@import "../../app.scss";
+
+.navbar {
+  height: 6.25rem;
+
+  .wrapper {
+    max-width: 85.375rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    // background-color: rebeccapurple;
+    height: 100%;
+
+    @include mobile {
+      justify-content: flex-end;
+      padding: 20px;
+    }
+
+    span {
+      font-weight: bold;
+      @include mobile {
+        display: none;
+      }
+    }
+    .social {
+      display: flex;
+      gap: 1.25rem;
+
+      img {
+        height: 1.125rem;
+        width: 1.125rem;
+      }
+    }
+  }
+}
